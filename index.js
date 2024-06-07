@@ -23,10 +23,12 @@ const server = http.createServer((req, res)=>{
 
         case "/contact":
             filePath = path.join(__dirname, filePath, "contact-me.html");
+            break;
 
         case "/contact-me":
             filePath = path.join(__dirname, filePath, "contact-me.html");
             break;
+
         default:
             filePath = path.join(__dirname, filePath, route);
             break;
